@@ -1,0 +1,101 @@
+OrderDate,Region,Representative,Item,Units,UnitCost,Total
+24-Nov-18,Central,Smith,Binder,32,8.99,287.68
+25-Apr-18,East,Parent,Pen Set,12,15.99,191.88
+30-Oct-18,North,Jones,Pen,12,4.99,59.88
+22-Apr-18,East,Hall,Pen Set,4,15.99,63.96
+15-Oct-18,East,Young,Desk,29,125.00,3625.00
+18-Aug-18,South,Howard,Pen,98,4.99,489.02
+17-Feb-19,East,Thomas,Binder,36,8.99,323.64
+21-Mar-18,East,Brown,Pen,12,4.99,59.88
+14-Jul-18,Central,Taylor,Binder,78,8.99,701.22
+16-May-18,Central,Moore,Pen Set,16,15.99,255.84
+14-May-19,North,Morgan,Pen Set,38,15.99,607.62
+1-Mar-19,South,Taylor,Pen Set,25,15.99,399.75
+27-Dec-18,Central,Jones,Pencil,99,1.29,127.71
+29-May-18,Central,Andrews,Pen,49,4.99,244.51
+23-May-18,North,Taylor,Pencil,48,1.29,61.92
+1-Jul-18,East,Howard,Pen,78,4.99,389.22
+22-Nov-18,East,Young,Pencil,21,1.29,27.09
+25-Aug-18,North,Howard,Pen Set,29,15.99,463.71
+17-Dec-18,West,Jones,Pencil,5,1.29,6.45
+17-Feb-19,West,Wilson,Binder,9,8.99,80.91
+19-Apr-18,South,Brown,Pencil,84,1.29,108.36
+13-Sep-18,North,Moore,Pencil,34,1.29,43.86
+13-Mar-18,East,Young,Pen Set,34,15.99,543.66
+18-Jan-19,South,Thomas,Pen Set,52,15.99,831.48
+5-Jul-18,East,Kivell,Pen Set,64,15.99,1023.36
+16-Feb-18,Central,Parent,Pencil,81,1.29,104.49
+23-Mar-18,North,Scott,Pen,50,4.99,249.50
+15-Jul-18,South,Moore,Pen Set,33,15.99,527.67
+13-May-19,South,Smith,Pen,88,4.99,439.12
+30-Mar-19,South,Howard,Binder,15,8.99,134.85
+31-May-18,North,Gill,Desk,1,125.00,125.00
+4-May-19,West,Hall,Pencil,65,1.29,83.85
+13-Apr-19,Central,Sorvino,Pen Set,78,15.99,1247.22
+12-Apr-18,East,Taylor,Pencil,70,1.29,90.30
+4-May-19,South,Smith,Pen Set,42,15.99,671.58
+8-Sep-18,Central,Parent,Binder,40,8.99,359.60
+3-May-18,Central,Andrews,Pen Set,11,15.99,175.89
+13-Feb-18,North,Morgan,Pen Set,99,15.99,1583.01
+6-Mar-18,East,Clark,Pen Set,22,15.99,351.78
+16-May-18,South,Scott,Desk,28,125.00,3500.00
+21-Apr-19,South,Jardine,Binder,52,8.99,467.48
+10-Dec-18,West,Moore,Pen Set,58,15.99,927.42
+3-Mar-18,East,Andrews,Pen,44,4.99,219.56
+11-Jan-18,South,Young,Pencil,76,1.29,98.04
+23-Apr-18,Central,Morgan,Pen,30,4.99,149.70
+4-Feb-18,Central,Brown,Pen,66,4.99,329.34
+2-May-18,West,Clark,Pencil,70,1.29,90.30
+9-Mar-18,South,King,Desk,32,125.00,4000.00
+6-Feb-19,North,Thomas,Pencil,13,1.29,16.77
+19-Feb-18,North,Taylor,Desk,53,125.00,6625.00
+28-Aug-18,Central,Parent,Pen,52,4.99,259.48
+8-Jan-19,West,Parent,Pencil,25,1.29,32.25
+8-Apr-18,South,Moore,Pencil,55,1.29,70.95
+4-Apr-18,West,Moore,Pencil,10,1.29,12.90
+15-Aug-18,South,Parent,Pen,84,4.99,419.16
+4-Oct-18,Central,Morgan,Pencil,22,1.29,28.38
+28-Jul-18,North,Clark,Pencil,52,1.29,67.08
+8-Apr-19,Central,Gill,Desk,1,125.00,125.00
+19-Jul-18,West,Moore,Binder,55,8.99,494.45
+23-Dec-18,South,Clark,Pencil,25,1.29,32.25
+1-Jun-18,East,Jones,Pen Set,95,15.99,1519.05
+5-Oct-18,Central,Brown,Pen,7,4.99,34.93
+27-Oct-18,North,Hall,Pen Set,21,15.99,335.79
+30-Jan-18,South,Morgan,Pencil,9,1.29,11.61
+1-Nov-18,Central,Andrews,Desk,16,125.00,2000.00
+28-Apr-19,South,Andrews,Pen Set,77,15.99,1231.23
+21-Jan-18,South,Morgan,Desk,85,125.00,10625.00
+26-Oct-18,South,Hall,Binder,34,8.99,305.66
+15-Apr-18,West,Andrews,Binder,51,8.99,458.49
+9-Mar-18,West,Moore,Binder,97,8.99,872.03
+25-Apr-19,Central,Smith,Desk,80,125.00,10000.00
+16-Oct-18,Central,Morgan,Pen Set,28,15.99,447.72
+17-Sep-18,West,Kivell,Binder,9,8.99,80.91
+27-Mar-19,East,Taylor,Binder,21,8.99,188.79
+13-Aug-18,South,Sorvino,Pen Set,84,15.99,1343.16
+28-Sep-18,Central,Young,Binder,85,8.99,764.15
+23-Feb-18,East,Howard,Pen,14,4.99,69.86
+16-Jan-19,South,Kivell,Binder,37,8.99,332.63
+6-Nov-18,East,Brown,Pencil,88,1.29,113.52
+21-Nov-18,West,Hall,Desk,33,125.00,4125.00
+9-Apr-19,Central,Morgan,Desk,36,125.00,4500.00
+23-Jan-18,Central,Brown,Pencil,82,1.29,105.78
+15-May-18,East,Moore,Pen Set,91,15.99,1455.09
+7-Aug-18,South,Smith,Pen,10,4.99,49.90
+29-Apr-19,East,Young,Pen,48,4.99,239.52
+26-Oct-18,South,Kivell,Desk,17,125.00,2125.00
+22-Jan-18,West,Taylor,Pen,46,4.99,229.54
+18-Apr-18,East,Parent,Binder,100,8.99,899.00
+14-Oct-18,North,Scott,Pencil,31,1.29,39.99
+19-Mar-19,East,Gill,Desk,4,125.00,500.00
+2-Apr-18,West,Thomas,Pencil,35,1.29,45.15
+23-Mar-18,Central,Wilson,Pen,61,4.99,304.39
+24-Apr-18,East,Moore,Binder,40,8.99,359.60
+25-Feb-19,East,Andrews,Pen,85,4.99,424.15
+9-Apr-18,North,Brown,Binder,9,8.99,80.91
+11-May-19,West,Taylor,Pen Set,52,15.99,831.48
+14-Dec-18,South,Brown,Pen,15,4.99,74.85
+26-Mar-19,West,Gill,Pen Set,34,15.99,543.66
+20-Jan-18,Central,Scott,Desk,45,125.00,5625.00
+9-Jan-19,West,Thomas,Pen Set,66,15.99,1055.34
