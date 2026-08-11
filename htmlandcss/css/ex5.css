@@ -1,0 +1,8 @@
+/* Child Combinators
+    The child combinators select all elements that are direct children of a 
+    specified element
+*/
+div > p{
+    background-color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .form-row {
+            margin-bottom: 12px;
+        }
+        label {
+            display: inline-block;
+            width: 140px;
+            vertical-align: top;
+            margin-top: 4px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="time"],
+        input[type="week"],
+        input[type="month"],
+        input[type="color"],
+        select,
+        textarea {
+            padding: 6px;
+            border: 1px solid #bbb;
+            border-radius: 4px;
+            min-width: 220px;
+        }
+        input::placeholder,
+        textarea::placeholder {
+            color: #666;
+        }
+        input.highlight,
+        textarea.highlight {
+            background: #ffff99;
+        }
+        .buttons {
+            margin-top: 16px;
+        }
+        .buttons button {
+            padding: 8px 16px;
+            margin-right: 8px;
+            border: 1px solid #666;
+            border-radius: 4px;
+            background: #f4f4f4;
+            cursor: pointer;
+        }
+        .buttons button:hover {
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Information Form</h1>
+
+    <form>
+        <div class="form-row">
+            <label for="firstName">First Name :</label>
+            <input style="background-color: #ffff99;" type="text" id="firstName" name="firstName" class="highlight" placeholder="Please enter your first name" />
+        </div>
+
+        <div class="form-row">
+            <label for="lastName">Last Name :</label>
+            <input type="text" id="lastName" name="lastName" class="highlight" placeholder="Please enter your last name" />
+        </div>
+
+        <div class="form-row">
+            <label>Gender :</label>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male" style="width: auto;">Male</label>
+            <input type="radio" id="female" name="gender" value="female" checked />
+            <label for="female" style="width: auto;">Female</label>
+            <input type="radio" id="others" name="gender" value="others" />
+            <label for="others" style="width: auto;">Others</label>
+        </div>
+
+        <div class="form-row">
+            <label>Languages known :</label>
+            <input type="checkbox" id="html" name="language" value="html" checked />
+            <label for="html" style="width: auto;">HTML</label>
+            <input type="checkbox" id="css" name="language" value="css" />
+            <label for="css" style="width: auto;">CSS</label>
+            <input type="checkbox" id="js" name="language" value="js" checked />
+            <label for="js" style="width: auto;">JS</label>
+        </div>
+
+        <div class="form-row">
+            <label for="address">Address :</label>
+            <textarea id="address" name="address" rows="3" cols="30" placeholder="Enter your address"></textarea>
+        </div>
+
+        <div class="form-row">
+            <label for="cities">Cities lived in :</label>
+            <select id="cities" name="cities" size="4">
+                <option value="bangalore">Bangalore</option>
+                <option value="mysore">Mysore</option>
+                <option value="kerala">Kerala</option>
+                <option value="chennai" selected>Chennai</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <label for="contact">Contact Number :</label>
+            <input type="tel" id="contact" name="contact" placeholder="Enter contact number" />
+        </div>
+
+        <div class="form-row">
+            <label for="favoriteColor">My favorite color is :</label>
+            <input type="color" id="favoriteColor" name="favoriteColor" value="#0000ff" />
+        </div>
+
+        <div class="form-row">
+            <label for="date">Date is :</label>
+            <input type="date" id="date" name="date" />
+        </div>
+
+        <div class="form-row">
+            <label for="birthday">Birthday is :</label>
+            <input type="datetime-local" id="birthday" name="birthday" />
+        </div>
+
+        <div class="form-row">
+            <label for="time">Time is :</label>
+            <input type="time" id="time" name="time" />
+        </div>
+
+        <div class="form-row">
+            <label for="week">Week is :</label>
+            <input type="week" id="week" name="week" />
+        </div>
+
+        <div class="form-row">
+            <label for="month">Month is :</label>
+            <input type="month" id="month" name="month" />
+        </div>
+
+        <div class="form-row">
+            <label for="email">Email id is :</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" />
+        </div>
+
+        <div class="buttons">
+            <button type="button">Click Me</button>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>

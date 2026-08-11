@@ -1,0 +1,11 @@
+/* Descendant Combinators (space)*/
+div p{
+    background-color: yellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+div label{
+     background-color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}

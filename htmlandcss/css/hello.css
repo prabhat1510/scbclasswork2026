@@ -1,0 +1,29 @@
+/* id selector */
+#p1{
+    background-color: red;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+/* class selector */
+.c1{
+    font-color: blue;
+    font-size: 35px;
+}
+
+/* element selector */
+h1{
+    font-size: 50px;
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+}
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+
+/* element selector */
+p{
+    background-color: yellow;
+}

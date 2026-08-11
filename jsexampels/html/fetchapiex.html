@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch API Promise Example</title>
+</head>
+
+<body>
+
+    <h2>REST API using Promise</h2>
+
+    <button onclick="loadUser()">Load User</button>
+
+    <div id="result"></div>
+
+    <script>
+
+        function loadUser() {
+
+            fetch("https://jsonplaceholder.typicode.com/users/1")
+
+                .then(function(response) {
+
+                    if (!response.ok) {
+                        throw new Error("HTTP Error: " + response.status);
+                    }
+
+                    return response.json();
+                })
+
+                .then(function(user) {
+
+                    document.getElementById("result").innerHTML =
+                        "<b>ID:</b> " + user.id + "<br>" +
+                        "<b>Name:</b> " + user.name + "<br>" +
+                        "<b>Email:</b> " + user.email;
+                })
+
+                .catch(function(error) {
+
+                    document.getElementById("result").innerHTML =
+                        "Error: " + error.message;
+                });
+
+        }
+
+    </script>
+
+</body>
+</html>

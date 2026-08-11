@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Promise Example</title>
+</head>
+<body>
+
+    <h2>Promise API Example</h2>
+
+    <button onclick="getData()">Get Data</button>
+
+    <p id="result"></p>
+
+    <script>
+
+        function getData() {
+
+            // Create a Promise
+            //new Promise(function(resolve,reject){})
+            const promise = new Promise(function(resolve, reject) {
+
+                let success = true;
+
+                setTimeout(function() {
+
+                    if (success) {
+                        resolve("Data fetched successfully!");
+                    } else {
+                        reject("Failed to fetch data.");
+                    }
+
+                }, 2000);
+
+            });
+
+            // Consume the Promise
+            promise
+                .then(function(result) { //success
+                    document.getElementById("result").innerHTML = result;
+                })
+                .catch(function(error) {//error
+                    document.getElementById("result").innerHTML = error;
+                })
+                .finally(function() {//always executes
+                    console.log("Promise execution completed");
+                });
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Box Model</title>
+        <style>
+            .box {
+                width: 500px;
+                height: 333px;
+                padding: 20px;
+                border: 5px solid black;
+                margin: 10px;
+            }
+            .card{
+                width: 500px;
+                height: 670px;
+                padding: 20px;
+                border: 25px solid black;
+                margin: 10px;
+
+            }
+            .image-row{
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                flex-wrap: wrap;/* Allows images to move to the next line if there's not enough space */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="image-row">
+        <div class="card"> <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli">
+        </div>
+        <div class="card"> <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Girl" >
+        </div>
+        <div class="card"> <img src="../images/cockroach.jfif" alt="Cockroach">
+        </div>
+        </div>
+    </body>
+</html>

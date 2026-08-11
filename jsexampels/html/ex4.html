@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DOM Manipulation</title>
+      
+    </head>
+
+    <body>
+        <p onmouseenter="addNode()" onmouseleave="deleteNode()">This is a paragraph.</p>
+        <script>
+            function addNode() {
+                var elementRef = document.getElementsByTagName("p")[0];
+                var newElement = document.createElement("span");
+                newElement.innerHTML = "Hello JavaScript!";
+                newElement.style.color = "red";
+                newElement.style.fontSize = "30px";
+                elementRef.appendChild(newElement);
+            }
+            function deleteNode() {
+                var elementRef = document.getElementsByTagName("p")[0];
+                var spanElement = elementRef.getElementsByTagName("span")[0];
+                if (spanElement) {
+                    elementRef.removeChild(spanElement);
+                }
+            }
+        </script>
+    </body>
+</html>

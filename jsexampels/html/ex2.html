@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/ex4.js"></script>
+</head>
+<body>
+        <!-- <input type="text" id="myInput" placeholder="Type something...">
+        <input type="button" value="Click Me" onclick="myFunction()"><br>
+        <input type="text" value="Click Me" onmouseover="myOverFunction()"><br>
+        <input type="text" value="Click Me" onmouseenter="myEnterFunction()"><br>
+        <input type="text" value="Click Me" onmouseleave="myLeaveFunction()"><br> -->
+        <form onsubmit="return displayInput(event);">
+            <label for="myInput">First Name:</label>
+            <input type="text" id="myInput" placeholder="Enter first Name..." onchange="displayFirstName(event)">
+            <label for="myInput1">Last Name:</label>
+            <input type="text" id="myInput1" placeholder="Enter last Name..." onchange="displayLastName(event)">
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- <input type="button" value="Click Me" onclick="displayInput ()"><br> -->
+    </body>
+</html>   

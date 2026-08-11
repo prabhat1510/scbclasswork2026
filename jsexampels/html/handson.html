@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Validation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        .error {
+            color: red;
+            margin-left: 10px;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>String Array</h2>
+
+    <!-- Array values will be displayed here -->
+    <ul id="nameList"></ul>
+
+    <hr>
+
+    <h2>Name Validation</h2>
+
+    <label for="name">Enter Name:</label>
+
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <span id="errorMessage" class="error"></span>
+
+    <br><br>
+
+    <button onclick="validateName()">Validate</button>
+
+
+    <script>
+
+        // --------------------------------------------------
+        // 1. Create an array of strings
+        // --------------------------------------------------
+
+        let names = [
+            "Prabhat",
+            "Rahul",
+            "Amit",
+            "Priya",
+            "Sneha"
+        ];
+
+
+        // Display array values in list format
+        let nameList = document.getElementById("nameList");
+
+        for (let i = 0; i < names.length; i++) {
+
+            let listItem = document.createElement("li");
+
+            listItem.textContent = names[i];
+
+            nameList.appendChild(listItem);
+        }
+
+
+        // --------------------------------------------------
+        // 2. Validate Name
+        // --------------------------------------------------
+
+        function validateName() {
+
+            // Get value from textbox
+            let name = document.getElementById("name").value;
+
+            // Get error message element
+            let errorMessage = document.getElementById("errorMessage");
+
+
+            // Regular expression:
+            // ^       -> beginning
+            // [A-Za-z]+ -> one or more alphabets
+            // $       -> end
+            let alphabetPattern = /^[A-Za-z]+$/;
+
+
+            // Check whether name contains only alphabets
+            if (!alphabetPattern.test(name)) {
+
+                errorMessage.textContent =
+                    "please enter only alphabets";
+
+            } else {
+
+                errorMessage.textContent = "";
+
+                alert("Valid name: " + name);
+            }
+        }
+
+    </script>
+
+</body>
+</html>
