@@ -1,0 +1,29 @@
+import HelloWorldComponent from "./components/HelloWorldComponent";
+import Alert from "./components/Alert";
+import Counter from "./components/Counter";
+import HelloMessage from "./components/HelloMessage";
+/** This is a functional component */
+function App(){
+    /**JSX code goes here */
+    const firstName="SCB";
+    const employee={
+        name:"Rajnish Osho",
+        city:"Pune"
+    }
+    /**return <><h1>Hello , {firstName}</h1>
+           <p>Good Afternoon All !!!</p></>*/
+
+           /**return <div><h1>Hello , {firstName}</h1>
+           <p>Good Afternoon All !!!</p></div>**/
+           return ( 
+           <div>
+            <h1>Hello , {firstName}</h1>
+           <p>Good Afternoon All !!!</p>
+           <HelloWorldComponent emp={employee}/> {/**Including an another component */}
+           <HelloMessage name={firstName} message="Wake Up All !!!"/>
+           <Counter />
+           <Alert />
+           </div>);
+}
+
+export default App;

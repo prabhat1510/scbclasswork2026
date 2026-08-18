@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Form</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="usecase.css">
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+    <form id="userForm">
+
+        <!-- First Name -->
+        <div class="row mb-3">
+            <div class="col-md-1">
+                <label for="firstName" class="form-label">
+                    First Name:
+                </label>
+            </div>
+
+            <div class="col-md-11">
+                <input
+                    type="text"
+                    id="firstName"
+                    class="form-control"
+                    placeholder="Enter First Name"
+                >
+            </div>
+        </div>
+
+        <!-- Second Name -->
+        <div class="row mb-3">
+            <div class="col-md-1">
+                <label for="lastName" class="form-label">
+                    Second Name:
+                </label>
+            </div>
+
+            <div class="col-md-11">
+                <input
+                    type="text"
+                    id="lastName"
+                    class="form-control"
+                    placeholder="Enter Second Name"
+                >
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="row">
+            <div class="offset-md-1 col-md-11">
+
+                <button
+                    type="submit"
+                    class="btn btn-primary me-1">
+                    Submit
+                </button>
+
+                <button
+                    type="button"
+                    id="displayBtn"
+                    class="btn btn-primary">
+                    Display JSON Data
+                </button>
+
+            </div>
+        </div>
+
+    </form>
+
+    <!-- JSON Output -->
+    <div class="row">
+        <div class="offset-md-1 col-md-11">
+            <div id="jsonOutput"></div>
+        </div>
+    </div>
+
+</div>
+
+<script src="usecase.js"></script>
+
+</body>
+</html>
