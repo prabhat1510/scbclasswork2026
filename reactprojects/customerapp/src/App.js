@@ -1,6 +1,7 @@
 import CustomerForm from "./components/CustomerForm";
 import CustomerDetails from "./components/CustomerDetails";
 import ListExample from "./components/ListExample";
+import CustomerList from "./components/CustomerList";
 import { useState } from 'react';
 
 function App(){
@@ -15,8 +16,16 @@ function App(){
     const addCustomer=(customer)=>{
         setCustData(customer);
     }
+    const handleCustomerSelect=(customer)=>{
+        setCustData(customer);
+    }
     return (<div>
-            <h1>App Component</h1>
+             <div>
+                {/** <ListExample >*/}
+                <CustomerList
+                onCustomerSelect={handleCustomerSelect}
+            />
+            </div>
             {/**Parent to child communication is taking in this we are pass a prop named as addCustomer */}
             <CustomerForm addCustomer={addCustomer} />
              <div>
@@ -25,9 +34,7 @@ function App(){
                     custData={custData}/>
 
             </div>
-            <div>
-                <ListExample />
-            </div>
+           
         </div>);
 }
 export default App;
