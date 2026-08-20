@@ -7,16 +7,31 @@ const CustomerForm = () => {
   const navigate = useNavigate();
 
   const isEdit = !!id;
-  const existing = initialCustomers.find(c => c.id === parseInt(id)) || { firstName: '', lastName: '', email: '' };
+  const existing = initialCustomers.find(c => c.id === parseInt(id)) || { firstName: '', lastName: '', email: '', id: '' };
 
   const [customer, setCustomer] = useState(existing);
+
+  const getNextCustomerId = () => {
+    const ids = initialCustomers
+      .map(customer => Number(customer.id))
+      .filter(id => Number.isInteger(id) && id > 0);
+
+    return ids.length ? Math.max(...ids) + 1 : 1;
+  };
 
   const handleChange = e => setCustomer({ ...customer, [e.target.name]: e.target.value });
 
   const handleSubmit = e => {
     e.preventDefault();
-    alert(isEdit ? "Customer updated successfully!" : "Customer created successfully!");
-    initialCustomers.push(customer);
+
+    if (!isEdit) {
+      const newCustomer = { ...customer, id: customer.id || getNextCustomerId() };
+      initialCustomers.push(newCustomer);
+      alert("Customer created successfully!");
+    } else {
+      alert("Customer updated successfully!");
+    }
+
     navigate("/customers");
   };
 
