@@ -1,0 +1,19 @@
+.customer-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.customer-table th,
+.customer-table td {
+    border: 1px solid #d0d0d0;
+    padding: 10px;
+    text-align: left;
+}
+
+.customer-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.customer-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}

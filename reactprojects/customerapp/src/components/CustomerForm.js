@@ -30,9 +30,8 @@ function CustomerForm(props){
         // console.log(event.target.email.value);
         custData.id=++counterForId;
         console.log(custData);
-        {/** Child to Parent communication - Here we are calling Parent component function addCustomer and passing the state of CustomerForm  to Parent Componnent App */}
-        props.addCustomer(custData);
-        //Set this custData to the set of App component which is a parent
+        // Child to Parent communication - Here we are calling Parent component function addCustomer and passing the state of CustomerForm to Parent Component App
+        props.addCustomer(custData);// Set this custData to the set of App component which is a parent
         //Resetting the state after form submit
         setCustData({
             id:"",

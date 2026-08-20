@@ -1,4 +1,5 @@
 import customers from '../customers.json';
+import './CustomerList.css';
 
 function CustomerList(props){
 
@@ -18,7 +19,7 @@ function CustomerList(props){
     return (
         <div>
             <h1>Customer List Component</h1>
-            <table>
+            <table className="customer-table">
                 <thead>
                     <tr>
                         <th>Customer Id</th>
