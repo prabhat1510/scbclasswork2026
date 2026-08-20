@@ -1,23 +1,22 @@
 import { useState,useEffect } from 'react'
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
  function UserDetails(){
-    const [user, setUser] = useState(null);
-    const idVal=1;
-    const fetchData = async () => {
-          try {
-           const response = await axios.get('https://jsonplaceholder.typicode.com/users', {
-                                  params: { id: idVal },
-                                 });
-            console.log(response.data[0]);
-            setUser(response.data[0]);
-          } catch (error) {
-            console.error('Error fetching user details:', error);
-          }
-        };
-    useEffect(() => {
-           
-        fetchData();
-      }, []);
+   const [user, setUser] = useState(null);
+   const { id } = useParams();
+
+   useEffect(() => {
+     const fetchData = async () => {
+       try {
+         const response = await axios.get(`https://jsonplaceholder.typicode.com/users?id=${id}`);
+         setUser(response.data[0]);
+       } catch (error) {
+         console.error('Error fetching user details:', error);
+       }
+     };
+
+     fetchData();
+   }, [id]);
    
     return(
         <div>

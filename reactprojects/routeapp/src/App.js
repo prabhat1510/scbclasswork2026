@@ -20,7 +20,7 @@ function App() {
         <Route path="/customers/edit/:id" element={<CustomerForm />} />
         <Route path="/customers/:id" element={<CustomerDetails />} />
         <Route path="/users" element={<Users />} />
-        <Route path="/user" element={<UserDetails />} />
+        <Route path="/user/:id" element={<UserDetails />} />
       </Routes>
     </>
   );
